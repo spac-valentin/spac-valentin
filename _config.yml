@@ -1,0 +1,286 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Valentin Marian Spac
+title: Software Engineer
+email: contact@valentinspac.dev
+# email_title: Email (Email title override)
+phone: "+40756505255"
+# phone_title: Phone (Phone title override)
+website: https://spac-valentin.github.io/
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+#twitter_username: ValentinSpac
+github_username:  spac-valentin
+stackoverflow_username: "5864135"
+linkedin_username: valentinspac
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  I work as a consultant/contractor/freelancer and have a demonstrated history in information technology and services industry.
+  Solving problems is my passion and programming is how I choose to exercise it. I have
+  great experience in backend development, mostly using Java and Spring Framework. I am
+  a fast learner who enjoys the challenge of discovering the insides of any programming
+  language or framework.
+
+  From past experiences, I have learned my way around other programming languages like
+  Python, Ruby and Javascript.
+
+  Working in a team is part of my daily life and I consider (clear) communication
+  the key to a fruitful cooperation.
+
+
+  <mark>TL;DR: </mark>
+
+  <b>Proeficient at: </b>
+    * Backend development using <mark>Java</mark> and <mark>Spring framework</mark>
+    * JPA with <mark>Hibernate</mark>
+    * <mark>SQL</mark> (PostgreSQL) and <mark>NoSQL</mark> (MongoDB)
+    * <mark>Unit testing</mark> using Mockito
+    * <mark>REST</mark> & <mark>GraphQL</mark> APIs
+    * <mark>Mockito</mark>
+
+  <b>Experienced in:</b>
+    * Docker
+    * Kubernetes
+    * Javascript
+    * Python
+    * Bash
+    * GraphQL
+
+  <b>Explored:</b>
+    * Front-end programming (HTML, CSS, Angular)
+    * Setting up a build system using <mark>Jenkins</mark>
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Software Consultant • Independent Contractor
+        sub_title: Software Engineer
+        caption: October 2020 - present
+        description: |
+          Current project is a start-up that aims to build an Operational Intelligence Platform.
+          It can processes real-time, near real-time & batch data from different sources to offer
+          business observability.
+
+          A feature I developed is a notification module responsibile for sending messages to
+          Microsoft Teams, iOS app & SMS when an alert gets created in the system.
+          Besides that, I proposed some improvements (E.g. use of graphql dataloaders to improve performance through batching),
+          refactored part of the app in order to lower the coupling
+          and increase testability and enhanced some of the existing features.
+          I have discovered and raised different issues like susceptibility to lost updates
+          phenomena and scalability issues due to stateful requests.
+
+          Technologies used: <mark>Java</mark>, <mark>Spring</mark>, <mark>JDBI</mark>,
+          <mark>Mockito</mark>, <mark>GraphQL</mark>, <mark>PostgreSQL</mark>
+
+      - layout: left
+        title: Software Consultant • Independent Contractor
+        sub_title: Software Engineer
+        caption: April 2019 - October 2020
+        description: | # this will include new lines to allow paragraphs
+          My first project as an independent consultant was a continuation of the
+          collaboration with the client I had worked for at the previous employer (see below).
+          I was a key person in migrating their deployment architecture from on-prem to
+          (a managed) Kubernetes platform. As responsabilities, I had to dockerize most of the microservices,
+          create the K8s specs and do everything else that was needed make the product run
+          on the new platform. This implied decoupling a few microservices that
+          were using shared code by splitting existing (low cohesive) modules.
+
+          <br>
+          Switching from on-prem deployment to a managed K8s introduced breaking changes
+          in the CI/CD flow. Along with 4 other colleagues, we built a Python
+          app responsibile of managing datacenter resources. This app was an important piece
+          in fixing the CI/CD as it was used to deploy K8s clusters on-demand. An async process
+          was indexing datacenter resources and from an Angular UI you could trigger
+          a deploy or do some management operations (add IPs, set hosts to unavailable, etc).
+          We used [Flask](https://flask.palletsprojects.com/en/2.0.x/) to expose REST endpoints
+          and PostgreSQL with [SQLAlchemy](https://www.sqlalchemy.org/) for storage.
+
+          Technologies used: <mark>Docker</mark>, <mark>Helm</mark>, <mark>Kubernetes</mark>,
+          <mark>Java</mark>, <mark>Mockito</mark>,<mark>Python</mark>, <mark>SQLAlchemy</mark>
+
+      - layout: left
+        title: Bytex Software Services
+        sub_title: Software Engineer
+        caption: May 2017 - April 2019
+        #link: https://bytex.net/
+        quote: >
+          Software development and consulting company with partners like VMWare and Cisco
+        description: | # this will include new lines to allow paragraphs
+          The last project I took part in is a comprehensive intent-assurance solution
+          that mathematically verifies the entire data center network for correctness.
+          It gives operators the confidence that their network is always operating
+          consistently with their intent, even as it changes dynamically
+
+          I was part of the backend team which was in charge of developing a suite of
+          microservices consumed by an AngularJS UI but I also added some UI functionalities,
+          ending with end-to-end flow implementation.
+
+          I had the opportunity to refactor a module responsibile for searching
+          and filtering data. The existing code was cluttered and it made
+          adding new functionalities time consuming and error prone. I delivered
+          a loosely coupled module employing few design patterns
+          (Chain of Responsibility, Template Method) that made adding new
+          search & filter terms easier, just by creating a new class.
+
+          Technologies: <mark>Java</mark>, <mark>Spring</mark>, <mark>MongoDB</mark>, <mark>Mockito</mark>
+      - layout: left
+        title: Endava
+        sub_title: UI developer
+        caption: February 2017 - May 2017
+        #link: Link to company (optional)
+        #quote: >
+      #    Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          I was part of a team of 3 frontend developers responsibile for creating
+          a portal for invoice management. We used Angular with ng-redux and sass
+          as CSS preprocessors. E2E testing was done using Protractor.
+
+
+          My main contribution was related to E2E testing.
+          I enhanced the testing framework to connect to DB in order to
+          assert the displayed values. I have also started the
+          migration from callbacks to promises and generators. As a result,
+          the confidence in automated tests increased and made the addition
+          of new test cases easier.
+
+          Technologies: <mark>Angular</mark>, <mark>Protractor</mark>, <mark>SaaS</mark>, <mark>HTML</mark>, <mark>CSS</mark>
+      - layout: left
+        title: Cognizant Softvision
+        sub_title: Java Software Engineer
+        caption: July 2014 - February 2017
+        #link: https://www.linkedin.com/company/softvision/
+        description: | # this will include new lines to allow paragraphs
+          The last project I worked on had to build the capability for users to access
+          their NAS (Network Attached Storage) from anywhere through a web application.
+          The client had the communication with NAS already figured out and the team I was
+          part of had to develop a set of microservices to act as a proxy between the
+          existing system and the new webapp.
+
+          Clients' system was using Apache MINA for high performance and scalability
+          and we had to enhance it to support the new requirements. While doing so,
+          we discovered a race condition in the file upload flow
+          which I took the responsability to fix. As a result, customers were able to
+          access all their NAS'es through a unified web application and easily (and error-free) upload files.
+
+
+          <br>
+          On my first project, the daily activities involved development of end-to-end features.
+          The backend was using Java, Spring and Hibernate. On the frontend side,
+          there was an AngularJS application consuming the exposed REST endpoints.
+
+          I also took responsability of integrating a 3rd party payment provider using SOAP protocol.
+
+          Technologies: <mark>Java</mark>, <mark>Spring</mark>, <mark>Apache Mina</mark>,
+          <mark>Mockito</mark>, <mark>Hibernate</mark>
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Faculty of Computer Science, Alexandru Ioan Cuza University
+        sub_title: BA in Computer Science
+        caption: 2012 - 2015
+      #  quote: >
+    #      Established in 1992 as the only faculty of IT in Romania, the curricula of the Faculty of Computer Science are comparable to and compatible with those of well-established universities in the domain, aimed at providing future graduates with adequate knowledge in the up-to-date IT topics.
+        description: | # this will include new lines to allow paragraphs
+
+          Graduation thesis - "Semantic Web Search"
+
+          Authors:
+            * Valentin Marian Spac
+            * Bogdan Stefan Hagiu ([LinkedIn](https://www.linkedin.com/in/stefan-bogdan-hagiu-52212171/))
+
+          Semantic Search engine leveraging RDF ([Resource Description Framework](https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf/))
+          to query graph knowledge bases ([Freebase](https://en.wikipedia.org/wiki/Freebase_(database)) (now closed)
+          and [DBpedia](https://www.dbpedia.org/)). Natural language processing (NLP) was required to transform sentences
+          into database queries. For this, we employed a python tool (Quepy) which does NLP.
+
+          Demo on [YouTube](https://www.youtube.com/watch?v=4Q5S1NKD-Cw)
+
+  - title: Published Articles
+    layout: list
+    content:
+      - layout: left
+        title: Medium Articles
+        description: |
+          ## [Java Dynamic proxy mechanism and how Spring is using it](https://medium.com/@spac.valentin/java-dynamic-proxy-mechanism-and-how-spring-is-using-it-93756fc707d5)
+          ## [A proxy endpoint that handles both JSON & x-www-form-urlencoded](https://medium.com/@spac.valentin/proxy-endpoint-that-handles-both-json-x-www-form-urlencoded-bfbca732a467)
+
+  - title: Volunteer Experience
+    layout: list
+    content:
+      - layout: left
+        title: Volunteer IT-st
+        sub_title: Java Trainer
+        caption: March 2016 - October 2016
+        link: https://it-st.ro/
+        quote: NGO focused on building a local community of IT experts
+        description:
+          Introduced a group of 15 freshman students to the basics of Java
+
+  # - title: A Little More About Me
+  #   layout: list
+
+
+# Footer
+#footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
