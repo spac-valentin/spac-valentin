@@ -11,7 +11,7 @@ title: Software Engineer
 email: contact@valentinspac.dev
 # email_title: Email (Email title override)
 phone: "+40756505255"
-# phone_title: Phone (Phone title override)
+phone_title: Phone number
 website: https://spac-valentin.github.io/
 # website_title: Web (Website title override)
 
@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  I work as a consultant/contractor/freelancer and have a demonstrated history in information technology and services industry.
+  I work as a consultant/contractor/freelancer with 7+ years of experience in information technology and services industry.
   Solving problems is my passion and programming is how I choose to exercise it. I have
   great experience in backend development, mostly using Java and Spring Framework. I am
   a fast learner who enjoys the challenge of discovering the insides of any programming
@@ -64,7 +64,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   <mark>TL;DR: </mark>
 
-  <b>Proeficient at: </b>
+  <b>Proficient at: </b>
     * Backend development using <mark>Java</mark> and <mark>Spring framework</mark>
     * JPA with <mark>Hibernate</mark>
     * <mark>SQL</mark> (PostgreSQL) and <mark>NoSQL</mark> (MongoDB)
@@ -97,7 +97,7 @@ content:
           It can processes real-time, near real-time & batch data from different sources to offer
           business observability.
 
-          A feature I developed is a notification module responsibile for sending messages to
+          A feature I developed is a notification module responsible for sending messages to
           Microsoft Teams, iOS app & SMS when an alert gets created in the system.
           Besides that, I proposed some improvements (E.g. use of graphql dataloaders to improve performance through batching),
           refactored part of the app in order to lower the coupling
@@ -117,17 +117,17 @@ content:
           collaboration with the client I had worked for at the previous employer (see below).
           I was a key person in migrating their deployment architecture from on-prem to
           (a managed) Kubernetes platform. As responsabilities, I had to dockerize most of the microservices,
-          create the K8s specs and do everything else that was needed make the product run
+          create the K8s specs and do everything else that was needed to make the product run
           on the new platform. This implied decoupling a few microservices that
           were using shared code by splitting existing (low cohesive) modules.
 
           <br>
           Switching from on-prem deployment to a managed K8s introduced breaking changes
           in the CI/CD flow. Along with 4 other colleagues, we built a Python
-          app responsibile of managing datacenter resources. This app was an important piece
+          app responsible of managing datacenter resources. This app was an important piece
           in fixing the CI/CD as it was used to deploy K8s clusters on-demand. An async process
           was indexing datacenter resources and from an Angular UI you could trigger
-          a deploy or do some management operations (add IPs, set hosts to unavailable, etc).
+          a deployment or do some management operations (add IPs, set hosts to unavailable, etc).
           We used [Flask](https://flask.palletsprojects.com/en/2.0.x/) to expose REST endpoints
           and PostgreSQL with [SQLAlchemy](https://www.sqlalchemy.org/) for storage.
 
@@ -151,7 +151,7 @@ content:
           microservices consumed by an AngularJS UI but I also added some UI functionalities,
           ending with end-to-end flow implementation.
 
-          I had the opportunity to refactor a module responsibile for searching
+          I had the opportunity to refactor a module responsible for searching
           and filtering data. The existing code was cluttered and it made
           adding new functionalities time consuming and error prone. I delivered
           a loosely coupled module employing few design patterns
@@ -167,7 +167,7 @@ content:
         #quote: >
       #    Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          I was part of a team of 3 frontend developers responsibile for creating
+          I was part of a team of 3 frontend developers responsible for creating
           a portal for invoice management. We used Angular with ng-redux and sass
           as CSS preprocessors. E2E testing was done using Protractor.
 
